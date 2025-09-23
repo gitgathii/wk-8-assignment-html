@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+header, section, footer {
+    margin: 20px;
+}
+
+h1, h2 {
+    color: navy;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.review {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.review:hover {
+    background-color: #e0f7ff;
+}
+
+form {
+    max-width: 600px;
+}
+
+input, textarea {
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
