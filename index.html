@@ -3,84 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAR CONTENT</title>
+    <title>Car Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body style="background-color: lightblue;">
-  <header>
-    <h1>CAR CONTENT</h1>
-    <p>welcome to my car content page</p>
-    <u>underlined text</u>
-  </header>
-  <section> 
-    <h2>TYPES OF CARS</h2>
-    <ul>
-        <li>BMW</li>
-        <LI>MERCEDES</LI>
-        <li>AUDI</li>
-    </ul>
-  </section>
-  <SECTION>
-    <h2>car information</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>CAR TYPE</th>
-                <th>CAR PRICE</th>
-                <th>CAR AGE</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-            <tr>
-                <td>BMW</td>
-                <td>$80,000</td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>MERCEDES</td>
-                <td>$60,000</td>
-                <td>1 year</td>
-            </tr>
-            <tr>
-                <td>AUDI</td>
-                <td>$65,000</td>
-                <td>4 years</td>
-            </tr>
-        </tbody>
-    </table>
-  </SECTION>
-  <section>
-    <h2>CAR REVIEWS</h2>
-    <h1>BMW M4 COMPETITION</h1>
-    <img src="https://www.bmwusa.com/content/dam/bmwusa/M/M4-Competition-Coupe/2024/BMW-MY24-M4-Competition-Coupe-Gallery-01.jpg" alt="BMW M4 COMPETITION" width="500" height="300">
-    <p>The BMW M4 Competition is a high-performance sports car that offers an exhilarating driving experience. With its powerful engine, precise handling, and aggressive styling, the M4 Competition is designed for enthusiasts who crave speed and agility. The car features a turbocharged inline-six engine that delivers impressive horsepower and torque, allowing for rapid acceleration and thrilling performance on both the road and the track. Inside, the M4 Competition boasts a luxurious interior with advanced technology and premium materials, providing comfort and convenience for drivers and passengers alike. Overall, the BMW M4 Competition is a top-tier sports car that combines performance, style, and luxury in one package.</p>
-    <h1>MERCEDES-AMG C63 S</h1>
-    <img src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/c-class/c-class-coupe/_jcr_content/image/MQ6-12-image-20220217120037/02-mercedes-benz-vehicles-c-class-coupe-coupe-amg-c-63-s-4matic-plus-2021-2560x1440.jpeg" alt="MERCEDES-AMG C63 S" width="500" height="300">
-    <p>The Mercedes-AMG C63 S is a high-performance luxury sedan that combines power, style, and advanced technology. Equipped with a handcrafted AMG 4.0-liter V8 biturbo engine, the C63 S delivers exhilarating performance with impressive horsepower and torque figures. The car features a sport-tuned suspension, dynamic handling, and an aggressive exhaust note that enhances the driving experience. Inside, the C63 S boasts a luxurious interior with premium materials, advanced infotainment systems, and cutting-edge safety features. With its sleek design and powerful performance capabilities, the Mercedes-AMG C63 S is a standout choice for enthusiasts seeking a thrilling and refined driving experience.</p>
-    <h1>AUDI RS5</h1>
-    <img src="https://www.audi.com/content/dam/audi/microsites/rs5/2020/rs5-coupe/1920x1080/1920x1080_audi_rs5_coupe_2020_1.jpg" alt="AUDI RS5" width="500" height="300">
-    <p>The Audi RS5 is a high-performance coupe that combines stunning design with exhilarating performance. Powered by a 2.9-liter V6 twin-turbo engine, the RS5 delivers impressive horsepower and torque, allowing for rapid acceleration and thrilling driving dynamics. The car features Audi's legendary Quattro all-wheel-drive system, ensuring exceptional traction and stability in various driving conditions. Inside, the RS5 boasts a luxurious interior with premium materials, advanced technology, and comfortable seating for both driver and passengers. With its striking looks and powerful performance, the Audi RS5 is a standout choice for enthusiasts seeking a blend of style and speed.</p>
-  </section>
-    <section>
-        <h2>CONTACT US</h2>
-        <form action="/submit_form" method="post">
-            <fieldset>
-                <legend>Contact Information</legend>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required minlength="3" maxlength="20" 
-               placeholder="3-20 characters" required autocomplete="username" autofocus><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required placeholder="e.g., your.name@example.com" required autocomplete="email"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <input type="submit" value="Submit"><br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-            <input type="button" value="Click Me" onclick="alert('Button Clicked!')">
-            </fieldset>
-        </form>
-        </section>
-        <footer>
-            <p>&copy; 2024 Car Content. All rights reserved.</p>  
-        </footer>
+<body>
+    <header class="header">
+        <h1>Car Content</h1>
+        <p>Welcome to my car content page</p>
+    </header>
+    <section class="car-types">
+        <h2>Types of Cars</h2>
+        <ul>
+            <li>BMW</li>
+            <li>Mercedes</li>
+            <li>Audi</li>
+        </ul>
+    </section>
+    <section class="car-info">
+        <h2>Car Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Car Type</th>
+                    <th>Car Price</th>
+                    <th>Car Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BMW</td>
+                    <td>$80,000</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Mercedes</td>
+                    <td>$60,000</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>Audi</td>
+                    <td>$65,000</td>
+                    <td>4 years</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="car-reviews">
+        <h2>Car Reviews</h2>
+        <div class="card box">
+            <h3>BMW M4 Competition</h3>
+            <img src="https://www.bmwusa.com/content/dam/bmwusa/M/M4-Competition-Coupe/2024/BMW-MY24-M4-Competition-Coupe-Gallery-01.jpg" alt="BMW M4 Competition" width="500" height="300">
+            <p>The BMW M4 Competition is a high-performance sports car that offers an exhilarating driving experience...</p>
+        </div>
+        <div class="card box">
+            <h3>Mercedes-AMG C63 S</h3>
+            <img src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/c-class/c-class-coupe/_jcr_content/image/MQ6-12-image-20220217120037/02-mercedes-benz-vehicles-c-class-coupe-coupe-amg-c-63-s-4matic-plus-2021-2560x1440.jpeg" alt="Mercedes-AMG C63 S" width="500" height="300">
+            <p>The Mercedes-AMG C63 S is a high-performance luxury sedan that combines power, style, and advanced technology...</p>
+        </div>
+        <div class="card box">
+            <h3>Audi RS5</h3>
+            <img src="https://www.audi.com/content/dam/audi/microsites/rs5/2020/rs5-coupe/1920x1080/1920x1080_audi_rs5_coupe_2020_1.jpg" alt="Audi RS5" width="500" height="300">
+            <p>The Audi RS5 is a high-performance coupe that combines stunning design with exhilarating performance...</p>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <button id="change-size-btn">Toggle Table Size</button>
+        <button id="toggle-modal-btn">Open Contact Form</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required minlength="3" maxlength="20" placeholder="3-20 characters" autocomplete="username" autofocus><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="e.g., your.name@example.com" autocomplete="email"><br><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                        <button type="button" id="submit-form">Submit</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Car Content. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
