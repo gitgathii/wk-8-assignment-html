@@ -10,6 +10,7 @@ function toggleHighlight() {
         box.classList.toggle('highlight', isHighlighted);
     });
     isHighlighted = !isHighlighted;
+    isHighlighted = isHighlighted < 0 ? true : false;
 }
 //  Loops
 boxes.forEach(box => {
