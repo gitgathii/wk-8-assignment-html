@@ -2,7 +2,7 @@
 //variable and conditions
 const boxes = document.querySelectorAll('.box');
 const carInfo = document.getElementById('car-info');
-const sizeBtn = document.getElementById('changeSize');
+const sizeBtn = document.getElementById('change-size-btn');
 let isHighlighted = false;
 //custom function
 function toggleHighlight() {
