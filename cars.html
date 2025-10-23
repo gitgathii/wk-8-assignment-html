@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cars - AutoLux</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="AutoLux Logo" />
+      <span>AutoLux</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cars.html" class="active">Cars</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header">
+    <h1>Our Luxury Fleet</h1>
+  </section>
+
+  <section class="cars-grid">
+    <div class="car-card" onclick="toggleDetails(this)">
+      <img src="images/car1.jpg" alt="Sports Car" />
+      <h3>Velocity X1</h3>
+      <p>Sports • 650 HP • 0-60 in 3.2s</p>
+      <div class="details">
+        <p><strong>Top Speed:</strong> 220 mph</p>
+        <p><strong>Price:</strong> $280,000</p>
+        <button class="btn small">Inquire</button>
+      </div>
+    </div>
+
+    <div class="car-card" onclick="toggleDetails(this)">
+      <img src="images/car3.jpg" alt="SUV" />
+      <h3>Regent SUV</h3>
+      <p>Luxury SUV • Hybrid • 7 Seats</p>
+      <div class="details">
+        <p><strong>Fuel Efficiency:</strong> 45 MPG</p>
+        <p><strong>Price:</strong> $195,000</p>
+        <button class="btn small">Inquire</button>
+      </div>
+    </div>
+
+    <div class="car-card" onclick="toggleDetails(this)">
+      <img src="images/car2.jpg" alt="Sedan" />
+      <h3>Elegance S</h3>
+      <p>Executive Sedan • Leather • AI Driver</p>
+      <div class="details">
+        <p><strong>Features:</strong> Level 3 Autonomy</p>
+        <p><strong>Price:</strong> $165,000</p>
+        <button class="btn small">Inquire</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoLux. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

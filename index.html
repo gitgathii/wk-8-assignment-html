@@ -1,98 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Content</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoLux - Luxury Cars</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header class="header">
-        <h1>Car Content</h1>
-        <p>Welcome to my car content page</p>
-    </header>
-    <section class="car-types">
-        <h2>Types of Cars</h2>
-        <ul>
-            <li>BMW</li>
-            <li>Mercedes</li>
-            <li>Audi</li>
-        </ul>
-    </section>
-    <section class="car-info">
-        <h2>Car Information</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Car Type</th>
-                    <th>Car Price</th>
-                    <th>Car Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>BMW</td>
-                    <td>$80,000</td>
-                    <td>2 years</td>
-                </tr>
-                <tr>
-                    <td>Mercedes</td>
-                    <td>$60,000</td>
-                    <td>1 year</td>
-                </tr>
-                <tr>
-                    <td>Audi</td>
-                    <td>$65,000</td>
-                    <td>4 years</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section class="car-reviews">
-        <h2>Car Reviews</h2>
-        <div class="card box">
-            <h3>BMW M4 Competition</h3>
-            <img src="https://www.bmwusa.com/content/dam/bmwusa/M/M4-Competition-Coupe/2024/BMW-MY24-M4-Competition-Coupe-Gallery-01.jpg" alt="BMW M4 Competition" width="500" height="300">
-            <p>The BMW M4 Competition is a high-performance sports car that offers an exhilarating driving experience...</p>
-        </div>
-        <div class="card box">
-            <h3>Mercedes-AMG C63 S</h3>
-            <img src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/c-class/c-class-coupe/_jcr_content/image/MQ6-12-image-20220217120037/02-mercedes-benz-vehicles-c-class-coupe-coupe-amg-c-63-s-4matic-plus-2021-2560x1440.jpeg" alt="Mercedes-AMG C63 S" width="500" height="300">
-            <p>The Mercedes-AMG C63 S is a high-performance luxury sedan that combines power, style, and advanced technology...</p>
-        </div>
-        <div class="card box">
-            <h3>Audi RS5</h3>
-            <img src="https://www.audi.com/content/dam/audi/microsites/rs5/2020/rs5-coupe/1920x1080/1920x1080_audi_rs5_coupe_2020_1.jpg" alt="Audi RS5" width="500" height="300">
-            <p>The Audi RS5 is a high-performance coupe that combines stunning design with exhilarating performance...</p>
-        </div>
-    </section>
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <button id="change-size-btn">Toggle Table Size</button>
-        <button id="toggle-modal-btn">Open Contact Form</button>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span id="close-modal" class="close">&times;</span>
-                <form>
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" required minlength="3" maxlength="20" placeholder="3-20 characters" autocomplete="username" autofocus><br><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required placeholder="e.g., your.name@example.com" autocomplete="email"><br><br>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                        <button type="button" id="submit-form">Submit</button>
-                        <button type="reset">Reset</button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Car Content. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+  <!-- hamburger menu -->
+  <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="AutoLux Logo" />
+      <span>AutoLux</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cars.html">Cars</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Drive the Future</h1>
+      <p>Experience luxury, power, and innovation on every journey.</p>
+      <a href="cars.html" class="btn">Explore Cars</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>Premium Quality</h3>
+      <p>Handpicked luxury vehicles with unmatched craftsmanship.</p>
+    </div>
+    <div class="feature">
+      <h3>Expert Service</h3>
+      <p>24/7 support and maintenance from certified professionals.</p>
+    </div>
+    <div class="feature">
+      <h3>Financing Options</h3>
+      <p>Flexible plans to make your dream car a reality.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AutoLux. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
